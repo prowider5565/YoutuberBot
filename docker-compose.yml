@@ -1,0 +1,13 @@
+version: "3.11"
+
+
+services:
+  app:
+    build: ./
+    ports:
+      - "$PORT:$PORT"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    command: uvicorn main:app --host=${HOST} --port=${PORT}

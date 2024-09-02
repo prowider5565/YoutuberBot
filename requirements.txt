@@ -1,0 +1,6 @@
+fastapi
+aiogram
+environs
+pydantic
+pydantic-settings
+uvicorn
