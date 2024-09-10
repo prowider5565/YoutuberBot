@@ -4,3 +4,4 @@ environs
 pydantic
 pydantic-settings
 uvicorn
+pytubefix
