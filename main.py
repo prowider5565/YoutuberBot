@@ -31,6 +31,12 @@ async def bot_webhook_handler(update: dict):
     telegram_update = types.Update(**update)
     await dp.feed_update(bot=bot, update=telegram_update)
 
+
 @app.get("/")
 async def get_hello():
     return JSONResponse({"msg": "Hello"})
+
+
+@app.get("/something")
+async def something():
+    return JSONResponse({"msg": "another thing different"})
